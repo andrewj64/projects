@@ -1,0 +1,36 @@
+
+
+Message Queues
+
+mmap turns a file into an array of bytes, so I can access any offset of the file
+
+man mq_overview
+man mmap
+man mq_open
+man pipe 
+
+
+Semaphores
+
+man sem_overview
+char *buff = new [ARRAY_SIZE * sizeof(Problem)];
+ARRAY_SIZE = 1024
+
+probNotFull = 1024;
+// post
+probNotEmpty = 0;
+
+sem_t *hasRoom;		// initialize to 1024
+sem_t *hasContent	// initialize to 0
+hasRoom = sem_open("\hasRoom", O_CREAT | O_RDWR, 0666, ARRAY_LEN);
+hasContent = sem_open("\hasContent", O_CREAT | O_RDWR, 0666, 0);
+
+int count = 0;
+while(1)
+{
+  // check for room in array
+  sem_wait(hasRoom);
+  // add item to array
+  std::cout << "Posting problem: " << count++ << std::endl;
+  sem_post(hasContent);
+}

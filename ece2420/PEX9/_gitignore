@@ -1,0 +1,5 @@
+bin/
+obj/
+dep/
+output.txt
+src/tests

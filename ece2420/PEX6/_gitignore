@@ -1,0 +1,6 @@
+bin/
+obj/
+ref/
+src/tally.cpp
+src/timer.cpp
+test

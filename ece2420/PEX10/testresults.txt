@@ -1,0 +1,19 @@
+test:
+logan
+morgan
+ogden
+bountiful
+Total Distance : 130
+
+test1:
+logan
+brigham_city
+ogden
+bountiful
+Total Distance : 110
+
+test2:
+bountiful not reachable from logan
+
+test3:
+bountiful not reachable from logan

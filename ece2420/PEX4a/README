@@ -1,0 +1,14 @@
+		ANALYSIS
++=======================================+
+|	     Execution Time		|
++=======================================+
+|		      # of Iterations	|
+|_______________________________________|
+|	|1	|10	|100	|1000	|
+|Phase 1|0.009	|0.024	|0.209	|1.921	|
+|Phase 2|0.012	|0.030	|0.182	|1.799	|
++=======================================+
+
+For lower iteration sizes, the normal client sans fork is faster, presumably because 
+of the time taken to fork the process.
+However, when the number of iterations increases over 100, the forked client is notably faster.

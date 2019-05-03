@@ -1,0 +1,16 @@
+Insert 40
+{K:40, C:BLACK, L:0, PK:NULL}
+
+Insert 20
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}
+
+Insert 60
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}{K:60, C:RED, L:1, PK:40}
+
+Insert 10
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:BLACK, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:10, C:RED, L:2, PK:20}
+

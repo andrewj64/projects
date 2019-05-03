@@ -1,0 +1,59 @@
+Try to make sense of the lecture and figure out vim at the same time!
+
+Detector take a function pointer (address of the function) 
+	- If the function param is called, then the Detector is called?
+	- pass the address of a function
+
+	- Callback function takes an input function pointer and sets that function address to another address
+		class Detector
+		{
+		 public:
+			Detector (function<void,> callback)
+				:m_callback(callback)
+			{};
+		 private:
+
+		}
+
+
+************************g++ -g -std=c++11***************
+		- Compile with debugging symbols
+		- Object dump, compiles with debugging symbols
+			- objdump -d(t?) test.exe | less
+***********************************************************
+
+- Functor class = executable object
+
+
+Lambdas!!!
+[captures](params){body}
+std::function<void()> myFunc;
+myFunc = [](){
+  std::cout << "This is my lambda" << std::endl;
+	}
+
+
+}
+
+
+}
+
+
+pex1
+instantiate
+call genkeys()
+return key between 0-255
+
+
+
+
+Cryptography
+
+- Asymmetric Key Cryptography
+	- Putting  an open lock you don't have the key for on something
+
+
+}
+}
+
+

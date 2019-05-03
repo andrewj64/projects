@@ -1,0 +1,16 @@
+logan
+bountiful
+logan brigham_city 40
+brigham_city logan 40
+ogden brigham_city 20
+brigham_city ogden 20
+ogden bountiful 50
+bountiful ogden 50
+morgan ogden 20
+ogden morgan 20
+logan morgan 60
+morgan logan 60
+logan tremonton 40
+tremonton logan 40
+tremonton brigham_city 40
+brigham_city tremonton 40

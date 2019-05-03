@@ -1,0 +1,62 @@
++----------------------------------------------------------------------+
+|                             Double Black                             |
++----------------------------------------------------------------------+
+Insert 40
+{K:40, C:BLACK, L:0, PK:NULL}
+
+Insert 60
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:60, C:RED, L:1, PK:40}
+
+Insert 10
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:10, C:RED, L:1, PK:40}{K:60, C:RED, L:1, PK:40}
+
+Insert 5
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:10, C:BLACK, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:5, C:RED, L:2, PK:10}
+
+Insert 20
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:10, C:BLACK, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:5, C:RED, L:2, PK:10}{K:20, C:RED, L:2, PK:10}
+
+Insert 30
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:10, C:RED, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:5, C:BLACK, L:2, PK:10}{K:20, C:BLACK, L:2, PK:10}
+{K:30, C:RED, L:3, PK:20}
+
+Insert 4
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:10, C:RED, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:5, C:BLACK, L:2, PK:10}{K:20, C:BLACK, L:2, PK:10}
+{K:4, C:RED, L:3, PK:5}{K:30, C:RED, L:3, PK:20}
+
+Insert 7
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:10, C:RED, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:5, C:BLACK, L:2, PK:10}{K:20, C:BLACK, L:2, PK:10}
+{K:4, C:RED, L:3, PK:5}{K:7, C:RED, L:3, PK:5}{K:30, C:RED, L:3, PK:20}
+
+Insert 2
+{K:10, C:BLACK, L:0, PK:40}
+{K:5, C:RED, L:1, PK:10}{K:40, C:RED, L:1, PK:10}
+{K:4, C:BLACK, L:2, PK:5}{K:7, C:BLACK, L:2, PK:5}{K:20, C:BLACK, L:2, PK:40}{K:60, C:BLACK, L:2, PK:40}
+{K:2, C:RED, L:3, PK:4}{K:30, C:RED, L:3, PK:20}
+
+Insert 15
+{K:10, C:BLACK, L:0, PK:40}
+{K:5, C:RED, L:1, PK:10}{K:40, C:RED, L:1, PK:10}
+{K:4, C:BLACK, L:2, PK:5}{K:7, C:BLACK, L:2, PK:5}{K:20, C:BLACK, L:2, PK:40}{K:60, C:BLACK, L:2, PK:40}
+{K:2, C:RED, L:3, PK:4}{K:15, C:RED, L:3, PK:20}{K:30, C:RED, L:3, PK:20}
+
+Insert 14
+{K:10, C:BLACK, L:0, PK:40}
+{K:5, C:BLACK, L:1, PK:10}{K:40, C:BLACK, L:1, PK:10}
+{K:4, C:BLACK, L:2, PK:5}{K:7, C:BLACK, L:2, PK:5}{K:20, C:RED, L:2, PK:40}{K:60, C:BLACK, L:2, PK:40}
+{K:2, C:RED, L:3, PK:4}{K:15, C:BLACK, L:3, PK:20}{K:30, C:BLACK, L:3, PK:20}
+{K:14, C:RED, L:4, PK:15}
+
+Deleting 60

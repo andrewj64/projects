@@ -1,0 +1,7 @@
+*.txt
+/bin
+/obj
+/dep
+src/tree.cpp
+src/tree.hpp
+src/path.hpp

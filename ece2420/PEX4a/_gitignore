@@ -1,0 +1,7 @@
+bin/
+dep/
+obj/
+shm.cpp
+main.cpp
+fork/
+notes

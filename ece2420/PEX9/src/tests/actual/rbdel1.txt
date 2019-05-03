@@ -1,0 +1,94 @@
++---------------------------------------------------------------------+
+|                             Basic Setup                             |
++---------------------------------------------------------------------+
+Insert 40
+{K:40, C:BLACK, L:0, PK:NULL}
+
+Insert 20
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}
+
+Insert 60
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}{K:60, C:RED, L:1, PK:40}
+
+Insert 10
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:BLACK, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:10, C:RED, L:2, PK:20}
+
+Delete 40
+Deleting 40
+Deleting 20
+{K:20, C:BLACK, L:0, PK:NULL}
+{K:10, C:RED, L:1, PK:20}{K:60, C:BLACK, L:1, PK:20}
++---------------------------------------------------------------------+
+|                             Basic Setup                             |
++---------------------------------------------------------------------+
+Insert 40
+{K:40, C:BLACK, L:0, PK:NULL}
+
+Insert 20
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}
+
+Insert 60
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}{K:60, C:RED, L:1, PK:40}
+
+Insert 10
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:BLACK, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:10, C:RED, L:2, PK:20}
+
+Delete 60
+Deleting 60
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:BLACK, L:1, PK:40}
+{K:10, C:RED, L:2, PK:20}
++---------------------------------------------------------------------+
+|                             Basic Setup                             |
++---------------------------------------------------------------------+
+Insert 40
+{K:40, C:BLACK, L:0, PK:NULL}
+
+Insert 20
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}
+
+Insert 60
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}{K:60, C:RED, L:1, PK:40}
+
+Insert 10
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:BLACK, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:10, C:RED, L:2, PK:20}
+
+Delete 20
+Deleting 20
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:10, C:RED, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
++---------------------------------------------------------------------+
+|                             Basic Setup                             |
++---------------------------------------------------------------------+
+Insert 40
+{K:40, C:BLACK, L:0, PK:NULL}
+
+Insert 20
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}
+
+Insert 60
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:RED, L:1, PK:40}{K:60, C:RED, L:1, PK:40}
+
+Insert 10
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:BLACK, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}
+{K:10, C:RED, L:2, PK:20}
+
+Delete 10
+Deleting 10
+{K:40, C:BLACK, L:0, PK:NULL}
+{K:20, C:BLACK, L:1, PK:40}{K:60, C:BLACK, L:1, PK:40}

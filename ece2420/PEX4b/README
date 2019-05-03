@@ -1,0 +1,38 @@
+				ANALYSIS
+				_________
+				
++=======================================+
+|	     	SHM Execution Time			|
++=======================================+
+|		      # of Iterations			|
+|_______________________________________|
+|		|1		|10		|100	|1000	|
+|=======================================|
+|Phase 1|0.009	|0.029	|0.253	|2.601	|
+|Phase 2|0.005	|0.048	|0.196	|1.800	|
++=======================================+
+
+Comparing the speed of the two phases, the second phase would obviously be faster after a certain point, 
+as observed in the message queue. Time lost due to the semaphores is mostly made up for with the efficiency
+of shared memory compared to the message queue. 
+Any significant changes in timing could be because I timed these tests on my laptop, while I timed the others
+on the lab computer. However, even on my slightly slower machine, Phase 2 was just as fast as Phase 2 of the
+message queue on a faster machine.
+
+
+
++=======================================+
+|	    	MQ Execution Time			|
++=======================================+
+|		      # of Iterations			|
+|_______________________________________|
+|		|1		|10		|100	|1000	|
+|Phase 1|0.009	|0.027	|0.209	|1.921	|
+|Phase 2|0.012	|0.030	|0.182	|1.799	|
++=======================================+
+
+For lower iteration sizes, the normal client sans fork is faster, presumably because 
+of the time taken to fork the process.
+However, when the number of iterations increases over 100, the forked client is notably faster.
+This is because one process can make and send problems while the other consumes the answers. 
+That's what causes the bottleneck.
