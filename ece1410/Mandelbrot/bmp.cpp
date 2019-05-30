@@ -1,5 +1,13 @@
 #include"bmp.h"
 
+#include <array>
+#include <complex>
+#include<fstream>
+#include<random>
+#include<chrono>
+#include <string>
+#include"walrus.h"
+
 using namespace std;
 
 /*******************************************************************
@@ -60,12 +68,12 @@ int main()
 	uniform_int_distribution<int> distribution(1,5);
 	rnd = distribution(generator);
 	
-	cout << "Generating mandelbrot_" << rnd << ".bmp" << endl;
+	std::string file = "mandelbrot_" + to_string(rnd) + ".bmp";
+	cout << "Generating " << file << endl;
 	cout << "Here's a walrus while you wait." << endl;
 	walrus();
 	
-	
-	output.open("mandelbrot_x.bmp", ios::out | ios::binary);				// Open bmp file
+	output.open(file, ios::out | ios::binary);				// Open bmp file
 	if(!output.good())														// If fails to open
 	{
 		cout << "OOOOOOPs file could not be opened." << endl;				// 	Exit

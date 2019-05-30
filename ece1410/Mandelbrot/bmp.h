@@ -1,11 +1,4 @@
 #include<iostream>
-#include <array>
-#include <complex>
-#include<fstream>
-#include<random>
-#include<chrono>
-#include"walrus.h"
-
 
 /******************************************
 * RGB class 
