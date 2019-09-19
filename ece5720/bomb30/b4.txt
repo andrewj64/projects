@@ -1,0 +1,17 @@
+(gdb) i b
+Num     Type           Disp Enb Address            What
+2       breakpoint     keep y   0x000000000040148f <explode_bomb>
+3       dprintf        keep y   0x000000000040148f <explode_bomb>
+        printf "!!!!!!!!DEATH!!!!!!!!!"
+15      breakpoint     keep y   0x0000000000400e1e in main at bomb.c:95
+        breakpoint already hit 1 time
+16      breakpoint     keep y   0x0000000000401129 <phase_4+65>
+18      breakpoint     keep y   0x0000000000401117 <phase_4+47>
+19      breakpoint     keep y   0x000000000040113a <phase_4+82>
+20      breakpoint     keep y   0x000000000040112f <phase_4+71>
+21      breakpoint     keep y   0x0000000000401105 <phase_4+29>
+        breakpoint already hit 1 time
+22      breakpoint     keep y   0x0000000000400e85 <func4+21>
+        breakpoint already hit 1 time
+(gdb) 
+
